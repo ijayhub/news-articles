@@ -6,7 +6,7 @@ import UseFetch from './UseFetch';
 
 const Home = () => {
     const [term, setTerm] = React.useState('everything');
-    const { data:articles, isLoading, error } = UseFetch(`https://api.nytimes.com/svc/search/v2/articlesearch.json?q=${term}&api-key=${process.env.REACT_APP_ARTICLES_API_KEY}`);
+    const { data:articles, isLoading } = UseFetch(`https://api.nytimes.com/svc/search/v2/articlesearch.json?q=${term}&api-key=${process.env.REACT_APP_ARTICLES_API_KEY}`);
     
     return (
 			<>
@@ -20,7 +20,7 @@ const Home = () => {
 					</div>
             </div>
             <div className='container mx-auto'>
-					{error && <div className="text-center text-3xl mt-20 font-bold">{error}</div>}
+					
 					{isLoading && <div className='text-center text-3xl mt-20 font-bold'>Loading...</div>}
 					{articles && <Article articles={articles} />}
 				</div>
