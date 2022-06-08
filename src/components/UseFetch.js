@@ -11,9 +11,9 @@ const UseFetch = (url) => {
 			setTimeout(() => {
 				fetch(url)
 					.then((res) => {
-						if (!res.ok) {
-							throw Error("can't connect");
-						}
+						// if (!res.ok) {
+						// 	throw Error("can't connect");
+						// }
 						return res.json();
 					})
 					.then((data) => {
