@@ -2,22 +2,20 @@
 import { useEffect, useState } from 'react'
 
 const UseFetch = (url) => {
-        const [data, setData] = useState([]);
-	
-		const [isLoading, setIsLoading] = useState(true);
+    const [data, setData] = useState([]);
+    const [isLoading, setIsLoading] = useState(true);
 		
 
 		useEffect(() => {
 			setTimeout(() => {
 				fetch(url)
-					.then((res) => {
+					.then(res => {
 						
 						return res.json();
 					})
-					.then((data) => {
-						setData(data.response.docs);
-					
-						setIsLoading(false);
+					.then(data => {
+                        setData(data.response.docs);
+                        setIsLoading(false);
 					})
 					
 			}, 300);

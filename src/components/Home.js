@@ -20,7 +20,6 @@ const Home = () => {
 					</div>
             </div>
             <div className='container mx-auto'>
-					
 					{isLoading && <div className='text-center text-3xl mt-20 font-bold'>Loading...</div>}
 					{articles && <Article articles={articles} />}
 				</div>
