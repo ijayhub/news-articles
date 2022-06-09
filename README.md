@@ -24,9 +24,9 @@
 
 <!-- [![Product Name Screen Shot][product-screenshot]](https://example.com) -->
 
-Repo_name: 
+Repo_name: https://github.com/ijayhub/news-articles
 
-Hosted link: 
+Hosted link: news-nytimes.netlify.app
 
 <h1 align="center">News Website</h1>
 
