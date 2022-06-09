@@ -26,7 +26,7 @@
 
 Repo_name: https://github.com/ijayhub/news-articles
 
-Hosted link: news-nytimes.netlify.app
+Hosted link: https://news-nytimes.netlify.app
 
 <h1 align="center">News Website</h1>
 
