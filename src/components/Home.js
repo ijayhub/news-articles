@@ -6,8 +6,7 @@ import UseFetch from './UseFetch';
 const Home = () => {
     
     const [term, setTerm] = React.useState('everything')
-    const { data: articles, isLoading } = UseFetch(
-			`https://api.nytimes.com/svc/search/v2/articlesearch.json?q=everything&api-key=${process.env.REACT_APP_ARTICLES_API_KEY}`
+    const { data: articles, isLoading } = UseFetch(`https://api.nytimes.com/svc/search/v2/articlesearch.json?q=${term}&api-key=${process.env.REACT_APP_ARTICLES_API_KEY}`
 		);
     
         return (
